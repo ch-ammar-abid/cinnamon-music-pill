@@ -1,0 +1,86 @@
+{
+  "layout1": {
+    "type": "layout",
+    "pages": ["appearance", "behavior"],
+    "appearance": {
+      "type": "page",
+      "title": "Appearance",
+      "sections": ["appearance-section"]
+    },
+    "behavior": {
+      "type": "page",
+      "title": "Behavior",
+      "sections": ["behavior-section"]
+    },
+    "appearance-section": {
+      "type": "section",
+      "title": "Appearance",
+      "keys": ["size", "scale", "opacity", "fixed-height", "accent", "show-artwork", "show-progress"]
+    },
+    "behavior-section": {
+      "type": "section",
+      "title": "Behavior",
+      "keys": ["player-mode", "preferred-player"]
+    }
+  },
+  "size": {
+    "type": "combobox",
+    "default": "medium",
+    "description": "Widget size",
+    "options": {"Mini": "mini", "Medium": "medium", "Large": "large"}
+  },
+  "scale": {
+    "type": "scale",
+    "default": 100,
+    "min": 60,
+    "max": 200,
+    "step": 5,
+    "show-value": true,
+    "description": "Widget scale (%)",
+    "tooltip": "Resize the whole widget from 60% to 200%"
+  },
+  "opacity": {
+    "type": "scale",
+    "default": 0.92,
+    "min": 0.20,
+    "max": 1.0,
+    "step": 0.01,
+    "show-value": true,
+    "description": "Background opacity",
+    "tooltip": "Choose the widget background transparency"
+  },
+  "fixed-height": {
+    "type": "scale",
+    "default": 0,
+    "min": 0,
+    "max": 600,
+    "step": 5,
+    "show-value": true,
+    "description": "Fixed height (px)",
+    "tooltip": "Set 0 for automatic height, or choose a fixed widget height in pixels"
+  },
+  "accent": {
+    "type": "colorchooser",
+    "default": "#a855f7",
+    "description": "Accent color"
+  },
+  "show-artwork": {"type": "switch", "default": true, "description": "Show album artwork"},
+  "show-progress": {"type": "switch", "default": true, "description": "Show progress bar"},
+  "player-mode": {
+    "type": "combobox",
+    "default": "auto",
+    "description": "Player selection",
+    "options": {
+      "Automatic (active player)": "auto",
+      "Spotify": "spotify",
+      "VLC": "vlc",
+      "Firefox / Browser bridge": "firefox"
+    }
+  },
+  "preferred-player": {
+    "type": "entry",
+    "default": "",
+    "description": "Optional MPRIS bus name",
+    "tooltip": "Leave empty for automatic selection, or enter e.g. org.mpris.MediaPlayer2.spotify"
+  }
+}

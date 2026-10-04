@@ -1,0 +1,10 @@
+{
+  "uuid": "cinnamon-music-pill@ammar",
+  "name": "Cinnamon Music Pill",
+  "description": "Lightweight, borderless Cinnamon music desklet powered by MPRIS/D-Bus",
+  "version": "0.4.0",
+  "author": "Ammar Abid",
+  "max-instances": 1,
+  "cinnamon-version": ["5.6", "5.8", "6.0", "6.2", "6.4", "6.6"],
+  "icon": "audio-x-generic"
+}
