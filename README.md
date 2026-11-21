@@ -43,7 +43,7 @@ Cinnamon Music Pill does not scrape YouTube and does not continuously poll the b
 
 ## Installation
 
-### Manual Installation
+### Manual installation
 
 Copy the desklet directory into:
 
